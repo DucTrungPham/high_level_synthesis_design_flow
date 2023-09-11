@@ -1,0 +1,53 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2.1 (lin64) Build 3414424 Sun Dec 19 10:57:14 MST 2021
+| Date         : Fri Aug 18 10:49:04 2023
+| Host         : giants running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_drc -file design_audio_wrapper_drc_routed.rpt -pb design_audio_wrapper_drc_routed.pb -rpx design_audio_wrapper_drc_routed.rpx
+| Design       : design_audio_wrapper
+| Device       : xczu7ev-ffvc1156-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 3
++-----------+----------+-------------------+------------+
+| Rule      | Severity | Description       | Violations |
++-----------+----------+-------------------+------------+
+| DPIP-2    | Warning  | Input pipelining  | 2          |
+| RTSTAT-10 | Warning  | No routable loads | 1          |
++-----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-2#1 Warning
+Input pipelining  
+DSP design_audio_i/fir_0/inst/grp_fir_Pipeline_loop_fu_76/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg input design_audio_i/fir_0/inst/grp_fir_Pipeline_loop_fu_76/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP design_audio_i/fir_1/inst/grp_fir_Pipeline_loop_fu_76/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg input design_audio_i/fir_1/inst/grp_fir_Pipeline_loop_fu_76/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+2 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_audio_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/I_DATAMOVER_MM2S/n_0_0
+design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/I_DATAMOVER_S2MM/n_0_0.
+Related violations: <none>
+
+

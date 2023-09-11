@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fir_coef.dat" path="/home/userdata/k64D/trungpd_64d/vivado_work/test/xup_high_level_synthesis_design_flow/srctest/source/zcu106/lab4_test/fir_coef.dat"/>
+    <originFiles name="fir.h" path="/home/userdata/k64D/trungpd_64d/vivado_work/test/xup_high_level_synthesis_design_flow/srctest/source/zcu106/lab4_test/fir.h"/>
+    <originFiles name="fir.c" path="/home/userdata/k64D/trungpd_64d/vivado_work/test/xup_high_level_synthesis_design_flow/srctest/source/zcu106/lab4_test/fir.c"/>
+  </source>
+  <testbench>
+    <originFiles name="fir_test.c" path="/home/userdata/k64D/trungpd_64d/vivado_work/test/xup_high_level_synthesis_design_flow/srctest/source/zcu106/lab4_test/fir_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;audio_test/src/pynq_z2_audio.h&apos; to &apos;zcu106_audio.h&apos;" description="Rename resource &apos;pynq_z2_audio.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/pynq_z2_audio.h" name="zcu106_audio.h" stamp="1692253082344" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;audio_test/src/pynq_z2_testapp.c&apos; to &apos;zcu106_testapp.c&apos;" description="Rename resource &apos;pynq_z2_testapp.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/pynq_z2_testapp.c" name="zcu106_testapp.c" stamp="1692253095950" updateReferences="true"/>
+</session>

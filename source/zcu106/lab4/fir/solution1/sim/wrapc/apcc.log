@@ -1,0 +1,10 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/home/tools/xilinx/Vitis_HLS/2021.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'trungpd_64d' on host 'localhost' (Linux_x86_64 version 3.10.0-1160.90.1.el7.x86_64) on Mon Aug 14 14:06:45 +07 2023
+INFO: [HLS 200-10] On os "CentOS Linux release 7.9.2009 (Core)"
+INFO: [HLS 200-10] In directory '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_trungpd_64d/282621691996805110211
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 6.53 seconds. Total CPU system time: 0.28 seconds. Total elapsed time: 6.82 seconds; peak allocated memory: 0.004 MB.

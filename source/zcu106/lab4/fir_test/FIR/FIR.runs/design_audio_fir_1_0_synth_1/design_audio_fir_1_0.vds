@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2021.2.1 (64-bit)
+# SW Build 3414424 on Sun Dec 19 10:57:14 MST 2021
+# IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+# Start of session at: Thu Aug 17 01:41:29 2023
+# Process ID: 24286
+# Current directory: /home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.runs/design_audio_fir_1_0_synth_1
+# Command line: vivado -log design_audio_fir_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_audio_fir_1_0.tcl
+# Log file: /home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.runs/design_audio_fir_1_0_synth_1/design_audio_fir_1_0.vds
+# Journal file: /home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.runs/design_audio_fir_1_0_synth_1/vivado.jou
+# Running On: truongsa, OS: Linux, CPU Frequency: 2299.926 MHz, CPU Physical cores: 6, Host memory: 67357 MB
+#-----------------------------------------------------------
+source design_audio_fir_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2846.531 ; gain = 2.023 ; free physical = 16671 ; free virtual = 38869
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/tools/xilinx/Vivado/2021.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_audio_fir_1_0, cache-ID = 160712845919169e.
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 17 01:42:08 2023...

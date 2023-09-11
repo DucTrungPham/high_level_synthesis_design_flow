@@ -1,0 +1,6 @@
+13:18:42 **** Incremental Build of configuration Emulation-SW for project audio_test_system ****
+make all 
+Package not supported, if the system project is in Emulation Target, and only Baremetal Or Embedded Linux Applications present
+
+13:18:42 Build Finished (took 156ms)
+

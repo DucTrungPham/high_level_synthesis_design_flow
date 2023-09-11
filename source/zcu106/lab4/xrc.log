@@ -1,0 +1,11 @@
+Thu Aug 17 13:38:50 2023: Server was asked to start on port: '44040'
+Thu Aug 17 13:38:50 2023: Server is using token UUID: 'fd2bcfd1-7598-4780-84d5-667948501858'
+Thu Aug 17 13:38:50 2023: Attempting to start server on port '44040'
+Thu Aug 17 13:38:50 2023: XRC main fifo: created main fifo '/tmp/xrcmainfd2bcfd1-7598-4780-84d5-667948501858', fd read = 11
+Thu Aug 17 13:38:50 2023: Running Rule Check Server
+Thu Aug 17 13:38:50 2023: Version 1.6.1
+Thu Aug 17 13:38:50 2023: Rule Check Server: Accepted socket connection from client
+Thu Aug 17 13:38:50 2023: EXCHANGE_TOKEN received, server token: fd2bcfd1-7598-4780-84d5-667948501858, passed token: fd2bcfd1-7598-4780-84d5-667948501858
+Thu Aug 17 16:19:05 2023: STOP_SERVER received, server token: fd2bcfd1-7598-4780-84d5-667948501858, passed token: fd2bcfd1-7598-4780-84d5-667948501858
+Thu Aug 17 16:19:05 2023: Socket received request to stop server.
+Thu Aug 17 16:19:05 2023: SERVER: destructor for server bound to port 44040

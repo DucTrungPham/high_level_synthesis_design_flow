@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;audio_test/src/zcu106_audio.h&apos;" deleteContents="false" description="Delete resource &apos;audio_test/src/zcu106_audio.h&apos;" element1="/audio_test/src/zcu106_audio.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1692251905632"/>&#x0A;<refactoring comment="Delete resource &apos;audio_test/src/zcu106_testapp.c&apos;" deleteContents="false" description="Delete resource &apos;audio_test/src/zcu106_testapp.c&apos;" element1="/audio_test/src/zcu106_testapp.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1692251911104"/>
+</session>

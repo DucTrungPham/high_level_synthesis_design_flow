@@ -1,0 +1,126 @@
+
+
+================================================================
+== Synthesis Summary Report of 'fir'
+================================================================
++ General Information: 
+    * Date:           Wed Sep  6 15:54:28 2023
+    * Version:        2021.2.1 (Build 3414424 on Sun Dec 19 10:57:14 MST 2021)
+    * Project:        fir
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |        Modules       | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |         |           |           |     |
+    |        & Loops       | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +----------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ fir                 |     -|  5.30|       70|  700.000|         -|       71|     -|        no|     -|  3 (~0%)|  340 (~0%)|  363 (~0%)|    -|
+    | + fir_Pipeline_loop  |     -|  5.63|       62|  620.000|         -|       62|     -|        no|     -|  1 (~0%)|  139 (~0%)|  126 (~0%)|    -|
+    |  o loop              |     -|  7.30|       60|  600.000|         5|        1|    57|       yes|     -|        -|          -|          -|    -|
+    +----------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++--------------+------------+---------------+--------+----------+
+| Interface    | Data Width | Address Width | Offset | Register |
++--------------+------------+---------------+--------+----------+
+| s_axi_fir_io | 32         | 6             | 16     | 0        |
++--------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++--------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------+
+| Interface    | Register | Offset | Width | Access | Description                      | Bit Fields                                               |
++--------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------+
+| s_axi_fir_io | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART |
+| s_axi_fir_io | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                 |
+| s_axi_fir_io | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN 5=CHAN2_INT_EN             |
+| s_axi_fir_io | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST 5=CHAN2_INT_ST             |
+| s_axi_fir_io | y        | 0x10   | 32    | R      | Data signal of y                 |                                                          |
+| s_axi_fir_io | y_ctrl   | 0x14   | 32    | R      | Control signal of y              | 0=y_ap_vld                                               |
+| s_axi_fir_io | x        | 0x20   | 32    | W      | Data signal of x                 |                                                          |
++--------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| y        | out       | short*   |
+| x        | in        | short    |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+----------+----------------------------------+
+| Argument | HW Interface | HW Type  | HW Info                          |
++----------+--------------+----------+----------------------------------+
+| y        | s_axi_fir_io | register | name=y offset=0x10 range=32      |
+| y        | s_axi_fir_io | register | name=y_ctrl offset=0x14 range=32 |
+| x        | s_axi_fir_io | register | name=x offset=0x20 range=32      |
++----------+--------------+----------+----------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------+-----+--------+----------+-----+--------+---------+
+| Name                                | DSP | Pragma | Variable | Op  | Impl   | Latency |
++-------------------------------------+-----+--------+----------+-----+--------+---------+
+| + fir                               | 3   |        |          |     |        |         |
+|   mul_mul_16s_10s_25_4_1_U7         | 1   |        | mul_ln44 | mul | dsp    | 3       |
+|   mac_muladd_16s_10s_31s_31_4_1_U8  | 1   |        | mul_ln52 | mul | dsp    | 3       |
+|   mac_muladd_16s_10s_31s_31_4_1_U8  | 1   |        | acc      | add | dsp    | 3       |
+|  + fir_Pipeline_loop                | 1   |        |          |     |        |         |
+|    add_ln48_fu_126_p2               | -   |        | add_ln48 | add | fabric | 0       |
+|    mac_muladd_16s_16s_37s_37_4_1_U1 | 1   |        | mul_ln49 | mul | dsp    | 3       |
+|    mac_muladd_16s_16s_37s_37_4_1_U1 | 1   |        | acc_2    | add | dsp    | 3       |
++-------------------------------------+-----+--------+----------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++----------------------+------+------+--------+-----------+---------+------+---------+
+| Name                 | BRAM | URAM | Pragma | Variable  | Storage | Impl | Latency |
++----------------------+------+------+--------+-----------+---------+------+---------+
+| + fir                | 0    | 0    |        |           |         |      |         |
+|   shift_reg_U        | -    | -    |        | shift_reg | ram_s2p | auto | 1       |
+|  + fir_Pipeline_loop | 0    | 0    |        |           |         |      |         |
+|    c_U               | -    | -    |        | c         | rom_1p  | auto | 1       |
++----------------------+------+------+--------+-----------+---------+------+---------+
+
+
+================================================================
+== User Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------------------+--------------------------+
+| Type      | Options                                  | Location                 |
++-----------+------------------------------------------+--------------------------+
+| interface | mode=s_axilite bundle=fir_io port=y      | fir.c:35 in fir, y       |
+| interface | mode=s_axilite bundle=fir_io port=x      | fir.c:36 in fir, x       |
+| interface | mode=s_axilite bundle=fir_io port=return | fir.c:37 in fir, return  |
+| interface | s_axilite port=return bundle=fir_io      | DIRECTIVE in fir, return |
++-----------+------------------------------------------+--------------------------+
+
+

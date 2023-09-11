@@ -1,0 +1,80 @@
+/*
+
+Xilinx Vitis v2021.2.0 (64-bit) [Major: 2021, Minor: 2]
+SW Build 3382031 on 2021-12-18-02:29:59
+
+Process ID (PID): 38369
+License: Customer
+
+Current time: 	Thu Aug 17 13:38:48 ICT 2023
+Time zone: 	Indochina Time (Asia/Ho_Chi_Minh)
+
+OS: CentOS Linux release 7.9.2009 (Core)
+OS Version: 3.10.0-1160.90.1.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 40
+
+Display: :50.0
+Screen size: 1366x745
+Available screens: 1
+Available disk space: 85 GB
+
+Java version: 	11.0.11 64-bit
+Java home: 	/home/tools/xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9
+Java executable location: 	/home/tools/xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /home/tools/xilinx/Vitis/2021.2/tps/lnx64/javafx-sdk-11.0.2/lib:/home/tools/xilinx/Vitis/2021.2/lib/lnx64.o/Default:/home/tools/xilinx/Vitis/2021.2/lib/lnx64.o:/home/tools/xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib/:/home/tools/xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib//server:/home/tools/xilinx/Vitis/2021.2/lib/lnx64.o:/home/tools/xilinx/Vitis/2021.2/lib/lnx64.o/Default:/home/tools/xilinx/Vitis/2021.2/lib/lnx64.o:/home/tools/xilinx/Vitis/2021.2/tps/lnx64/python-3.8.3/lib:/home/tools/xilinx/Vitis/2021.2/aietools/lib/lnx64.o:/opt/xilinx/xrt/lib:/home/tools/xilinx/Vivado/2021.2/bin/../lnx64/tools/dot/lib:/home/tools/xilinx/Vitis/2021.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /home/tools/xilinx/Vitis/2021.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /home/tools/xilinx/Vitis
+
+User name: 	trungpd_64d
+User home directory: /home/userdata/k64D/trungpd_64d
+User working directory: /home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/tools/xilinx/Vitis
+HDI_APPROOT: /home/tools/xilinx/Vitis/2021.2
+RDI_DATADIR: /home/tools/xilinx/Vitis/2021.2/data
+RDI_BINDIR: /home/tools/xilinx/Vitis/2021.2/bin
+
+Vitis preferences directory: /home/userdata/k64D/trungpd_64d/.Xilinx/Vitis/2021.2/
+Vitis workspace directory: /home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab5
+Vitis workspace log file location: /home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab5/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /home/tools/xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: /home/tools/xilinx/Vitis/2021.2
+XILINX_SDK: /home/tools/xilinx/Vitis/2021.2
+XILINX_VITIS: /home/tools/xilinx/Vitis/2021.2
+XILINX_VIVADO: /home/tools/xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: /home/tools/xilinx/Vivado/2021.2
+XILINX_XRT: /opt/xilinx/xrt
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectButton("Next", "New Application Project (Create a New Application Project)", "NewAppProjectWizard", "Button.NEXT");
+selectToolBarButton("Add", "New Application Project (Platform)", "NewAppProjectWizard", "ToolItem.ADD");
+setDirectoryDialog("/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/audio", "Specify Custom Platform Location (Directory)", "SDXDirectoryDialog", "Button.OK");
+selectButton("Next", "New Application Project (Platform)", "NewAppProjectWizard", "Button.NEXT");
+setTextField("lab5", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Text.APPLICATION_PROJECT_NAME");
+selectButton("Next", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Next", "New Application Project (Domain)", "NewAppProjectWizard", "Button.NEXT");
+selectTreeTable("Empty Application", "Embedded software development templates", "New Application Project (Templates)", "NewAppProjectWizard", "TreeViewer.TemplateContentProvider");
+selectButton("Finish", "New Application Project (Templates)", "NewAppProjectWizard", "Button.FINISH");
+activateView("Welcome", "ViewIntroAdapterPart", "CTabItem.WELCOME");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 8/17/23, 4:19:05 PM ICT
+// Elapsed time: 02:40:17
+

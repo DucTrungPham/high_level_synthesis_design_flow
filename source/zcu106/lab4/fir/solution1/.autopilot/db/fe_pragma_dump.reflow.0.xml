@@ -1,0 +1,6 @@
+<pragmas>
+<pragma file="fir.c" line="34" pragmaType="interface" parentfunction="fir" mode="s_axilite" port="" bundle="fir_io" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fir.c" line="35" pragmaType="interface" parentfunction="fir" mode="s_axilite" port="y" bundle="fir_io" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fir.c" line="35" pragmaType="interface" parentfunction="fir" mode="s_axilite" port="x" bundle="fir_io" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fir.c" line="36" pragmaType="interface" parentfunction="fir" mode="s_axilite" port="" bundle="fir_io" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

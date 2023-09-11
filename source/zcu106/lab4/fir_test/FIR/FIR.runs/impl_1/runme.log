@@ -1,0 +1,941 @@
+
+*** Running vivado
+    with args -log design_audio_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_audio_wrapper.tcl -notrace
+
+
+****** Vivado v2021.2.1 (64-bit)
+  **** SW Build 3414424 on Sun Dec 19 10:57:14 MST 2021
+  **** IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_audio_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/tools/xilinx/Vivado/2021.2/data/ip'.
+Command: link_design -top design_audio_wrapper -part xczu7ev-ffvc1156-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_audio_formatter_0_0/design_audio_audio_formatter_0_0.dcp' for cell 'design_audio_i/audio_formatter_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_axi_iic_0_0/design_audio_axi_iic_0_0.dcp' for cell 'design_audio_i/axi_iic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_axi_smc_0/design_audio_axi_smc_0.dcp' for cell 'design_audio_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_clk_wiz_0_0/design_audio_clk_wiz_0_0.dcp' for cell 'design_audio_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_fir_0_0/design_audio_fir_0_0.dcp' for cell 'design_audio_i/fir_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_fir_1_0/design_audio_fir_1_0.dcp' for cell 'design_audio_i/fir_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_i2s_receiver_0_0/design_audio_i2s_receiver_0_0.dcp' for cell 'design_audio_i/i2s_receiver_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_i2s_transmitter_0_0/design_audio_i2s_transmitter_0_0.dcp' for cell 'design_audio_i/i2s_transmitter_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_proc_sys_reset_0_0/design_audio_proc_sys_reset_0_0.dcp' for cell 'design_audio_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_proc_sys_reset_1_0/design_audio_proc_sys_reset_1_0.dcp' for cell 'design_audio_i/proc_sys_reset_1_24M'
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_rst_clk_wiz_0_48M_0/design_audio_rst_clk_wiz_0_48M_0.dcp' for cell 'design_audio_i/rst_clk_wiz_0_48M'
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_zynq_ultra_ps_e_0_0/design_audio_zynq_ultra_ps_e_0_0.dcp' for cell 'design_audio_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_xbar_0/design_audio_xbar_0.dcp' for cell 'design_audio_i/ps8_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_auto_pc_0/design_audio_auto_pc_0.dcp' for cell 'design_audio_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.38 . Memory (MB): peak = 3130.332 ; gain = 0.000 ; free physical = 29012 ; free virtual = 53270
+INFO: [Netlist 29-17] Analyzing 401 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_audio_i/clk_wiz_0/inst/clkin1_ibuf 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_audio_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_zynq_ultra_ps_e_0_0/design_audio_zynq_ultra_ps_e_0_0.xdc] for cell 'design_audio_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_zynq_ultra_ps_e_0_0/design_audio_zynq_ultra_ps_e_0_0.xdc] for cell 'design_audio_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_clk_wiz_0_0/design_audio_clk_wiz_0_0_board.xdc] for cell 'design_audio_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_clk_wiz_0_0/design_audio_clk_wiz_0_0_board.xdc] for cell 'design_audio_i/clk_wiz_0/inst'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_clk_wiz_0_0/design_audio_clk_wiz_0_0.xdc] for cell 'design_audio_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_clk_wiz_0_0/design_audio_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_clk_wiz_0_0/design_audio_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_clk_wiz_0_0/design_audio_clk_wiz_0_0.xdc] for cell 'design_audio_i/clk_wiz_0/inst'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_proc_sys_reset_0_0/design_audio_proc_sys_reset_0_0_board.xdc] for cell 'design_audio_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_proc_sys_reset_0_0/design_audio_proc_sys_reset_0_0_board.xdc] for cell 'design_audio_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_proc_sys_reset_0_0/design_audio_proc_sys_reset_0_0.xdc] for cell 'design_audio_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_proc_sys_reset_0_0/design_audio_proc_sys_reset_0_0.xdc] for cell 'design_audio_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_audio_formatter_0_0/design_audio_audio_formatter_0_0.xdc] for cell 'design_audio_i/audio_formatter_0/inst'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_audio_formatter_0_0/design_audio_audio_formatter_0_0.xdc] for cell 'design_audio_i/audio_formatter_0/inst'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_rst_clk_wiz_0_48M_0/design_audio_rst_clk_wiz_0_48M_0_board.xdc] for cell 'design_audio_i/rst_clk_wiz_0_48M/U0'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_rst_clk_wiz_0_48M_0/design_audio_rst_clk_wiz_0_48M_0_board.xdc] for cell 'design_audio_i/rst_clk_wiz_0_48M/U0'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_rst_clk_wiz_0_48M_0/design_audio_rst_clk_wiz_0_48M_0.xdc] for cell 'design_audio_i/rst_clk_wiz_0_48M/U0'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_rst_clk_wiz_0_48M_0/design_audio_rst_clk_wiz_0_48M_0.xdc] for cell 'design_audio_i/rst_clk_wiz_0_48M/U0'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_axi_smc_0/bd_0/ip/ip_1/bd_0876_psr_aclk_0_board.xdc] for cell 'design_audio_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_axi_smc_0/bd_0/ip/ip_1/bd_0876_psr_aclk_0_board.xdc] for cell 'design_audio_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_axi_smc_0/bd_0/ip/ip_1/bd_0876_psr_aclk_0.xdc] for cell 'design_audio_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_axi_smc_0/bd_0/ip/ip_1/bd_0876_psr_aclk_0.xdc] for cell 'design_audio_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_proc_sys_reset_1_0/design_audio_proc_sys_reset_1_0_board.xdc] for cell 'design_audio_i/proc_sys_reset_1_24M/U0'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_proc_sys_reset_1_0/design_audio_proc_sys_reset_1_0_board.xdc] for cell 'design_audio_i/proc_sys_reset_1_24M/U0'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_proc_sys_reset_1_0/design_audio_proc_sys_reset_1_0.xdc] for cell 'design_audio_i/proc_sys_reset_1_24M/U0'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_proc_sys_reset_1_0/design_audio_proc_sys_reset_1_0.xdc] for cell 'design_audio_i/proc_sys_reset_1_24M/U0'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_i2s_transmitter_0_0/design_audio_i2s_transmitter_0_0_board.xdc] for cell 'design_audio_i/i2s_transmitter_0/inst'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_i2s_transmitter_0_0/design_audio_i2s_transmitter_0_0_board.xdc] for cell 'design_audio_i/i2s_transmitter_0/inst'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_i2s_receiver_0_0/design_audio_i2s_receiver_0_0_board.xdc] for cell 'design_audio_i/i2s_receiver_0/inst'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_i2s_receiver_0_0/design_audio_i2s_receiver_0_0_board.xdc] for cell 'design_audio_i/i2s_receiver_0/inst'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_axi_iic_0_0/design_audio_axi_iic_0_0_board.xdc] for cell 'design_audio_i/axi_iic_0/U0'
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.gen/sources_1/bd/design_audio/ip/design_audio_axi_iic_0_0/design_audio_axi_iic_0_0_board.xdc] for cell 'design_audio_i/axi_iic_0/U0'
+Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.srcs/constrs_1/new/zcu106_audio_const.xdc]
+Finished Parsing XDC File [/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.srcs/constrs_1/new/zcu106_audio_const.xdc]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_AESCHSTS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_AESCHSTS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/reset_s2mm/ASYNC_CLOCKS.CDC_SOFT_RESET_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/reset_s2mm/ASYNC_CLOCKS.CDC_SOFT_RESET_AXI_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/reset_s2mm/ASYNC_CLOCKS.CDC_HALT_COMPLETE_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_cdc_1/ASYNC_CLOCKS.CDC_SLAVE_ERROR_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_cdc_1/ASYNC_CLOCKS.CDC_CS_CLEAR_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_cdc_1/ASYNC_CLOCKS.CDC_DECODE_ERROR_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_cdc_1/ASYNC_CLOCKS.CDC_TIMEOUT_ERROR_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_cdc_1/ASYNC_CLOCKS.CDC_START_DMA_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/reset_mm2s/ASYNC_CLOCKS.CDC_SOFT_RESET_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/reset_mm2s/ASYNC_CLOCKS.CDC_SOFT_RESET_AXI_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/reset_mm2s/ASYNC_CLOCKS.CDC_HALT_COMPLETE_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/ASYNC_CLOCKS.CDC_SLAVE_ERROR_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/ASYNC_CLOCKS.CDC_DECODE_ERROR_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_cdc_1/ASYNC_CLOCKS.CDC_START_DMA_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_VALIDITY_AXIS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_VALIDITY_AXISCLK_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_audio_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/CDC_ENABLE_AXIS_INST 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/tools/xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Project 1-1714] 120 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4251.875 ; gain = 0.000 ; free physical = 28242 ; free virtual = 52500
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 206 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 6 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 65 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 5 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 93 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 32 instances
+
+27 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 4251.875 ; gain = 1376.633 ; free physical = 28242 ; free virtual = 52500
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4251.875 ; gain = 0.000 ; free physical = 28217 ; free virtual = 52475
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 2736a6d0d
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 4251.875 ; gain = 0.000 ; free physical = 28207 ; free virtual = 52465
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/I_DATAMOVER_S2MM/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_WR_DATA_CNTL/INTERLEAVED.second_level_xpm_fifo_buffer_i_2 into driver instance design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/I_DATAMOVER_S2MM/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_WR_DATA_CNTL/status_reg[190]_i_5, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter design_audio_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_I/sr_i[0]_i_1 into driver instance design_audio_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_I/callingReadAccess_i_2, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter design_audio_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance design_audio_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_audio_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/rChannelStatusIn[191]_i_1 into driver instance design_audio_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/rAudioFrameCount[7]_i_4, which resulted in an inversion of 6 pins
+INFO: [Opt 31-1287] Pulled Inverter design_audio_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance design_audio_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_audio_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/m_ready_d[2]_i_2 into driver instance design_audio_i/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/m_ready_d[2]_i_4, which resulted in an inversion of 3 pins
+INFO: [Opt 31-138] Pushed 62 inverter(s) to 1760 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1c4a24fee
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4289.910 ; gain = 1.004 ; free physical = 28008 ; free virtual = 52266
+INFO: [Opt 31-389] Phase Retarget created 114 cells and removed 461 cells
+INFO: [Opt 31-1021] In phase Retarget, 39 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 8 inverter(s) to 16 load pin(s).
+Phase 2 Constant propagation | Checksum: 1ddd11c16
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4289.910 ; gain = 1.004 ; free physical = 28008 ; free virtual = 52266
+INFO: [Opt 31-389] Phase Constant propagation created 206 cells and removed 789 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 42 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1c59d2211
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 4289.910 ; gain = 1.004 ; free physical = 28006 ; free virtual = 52264
+INFO: [Opt 31-389] Phase Sweep created 2 cells and removed 692 cells
+INFO: [Opt 31-1021] In phase Sweep, 55 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: 1c59d2211
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 4289.910 ; gain = 1.004 ; free physical = 27990 ; free virtual = 52248
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1c59d2211
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 4289.910 ; gain = 1.004 ; free physical = 28003 ; free virtual = 52261
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+INFO: [Opt 31-1287] Pulled Inverter design_audio_i/axi_smc/inst/s01_entry_pipeline/s01_si_converter/inst/converter.wrap_narrow_inst/aw_reg_slice/skid_buffer[1129]_i_1 into driver instance design_audio_i/axi_smc/inst/s01_entry_pipeline/s01_si_converter/inst/converter.wrap_narrow_inst/aw_reg_slice/skid_buffer[1129]_i_2, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter design_audio_i/axi_smc/inst/s01_entry_pipeline/s01_si_converter/inst/converter.wrap_narrow_inst/aw_reg_slice/skid_buffer[1130]_i_1 into driver instance design_audio_i/axi_smc/inst/s01_entry_pipeline/s01_si_converter/inst/converter.wrap_narrow_inst/aw_reg_slice/skid_buffer[1130]_i_2, which resulted in an inversion of 3 pins
+Phase 6 Post Processing Netlist | Checksum: 1facbf062
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 4289.910 ; gain = 1.004 ; free physical = 27995 ; free virtual = 52253
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 2 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 32 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             114  |             461  |                                             39  |
+|  Constant propagation         |             206  |             789  |                                             42  |
+|  Sweep                        |               2  |             692  |                                             55  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               2  |                                             32  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4289.910 ; gain = 0.000 ; free physical = 28005 ; free virtual = 52263
+Ending Logic Optimization Task | Checksum: 11546a1b3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 4289.910 ; gain = 1.004 ; free physical = 28005 ; free virtual = 52263
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 1 newly gated: 0 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: 200ca5779
+
+Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.18 . Memory (MB): peak = 4634.914 ; gain = 0.000 ; free physical = 27965 ; free virtual = 52223
+Ending Power Optimization Task | Checksum: 200ca5779
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 4634.914 ; gain = 345.004 ; free physical = 27994 ; free virtual = 52252
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 200ca5779
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4634.914 ; gain = 0.000 ; free physical = 27994 ; free virtual = 52252
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4634.914 ; gain = 0.000 ; free physical = 27994 ; free virtual = 52252
+Ending Netlist Obfuscation Task | Checksum: 14573587f
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4634.914 ; gain = 0.000 ; free physical = 27994 ; free virtual = 52252
+INFO: [Common 17-83] Releasing license: Implementation
+62 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:15 . Memory (MB): peak = 4634.914 ; gain = 383.039 ; free physical = 27995 ; free virtual = 52253
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.09 . Memory (MB): peak = 4634.914 ; gain = 0.000 ; free physical = 27967 ; free virtual = 52230
+INFO: [Common 17-1381] The checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.runs/impl_1/design_audio_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 4634.914 ; gain = 0.000 ; free physical = 27969 ; free virtual = 52236
+INFO: [runtcl-4] Executing : report_drc -file design_audio_wrapper_drc_opted.rpt -pb design_audio_wrapper_drc_opted.pb -rpx design_audio_wrapper_drc_opted.rpx
+Command: report_drc -file design_audio_wrapper_drc_opted.rpt -pb design_audio_wrapper_drc_opted.pb -rpx design_audio_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.runs/impl_1/design_audio_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:30 ; elapsed = 00:00:23 . Memory (MB): peak = 5253.215 ; gain = 618.301 ; free physical = 27445 ; free virtual = 51712
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5253.215 ; gain = 0.000 ; free physical = 27449 ; free virtual = 51716
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 124d64a11
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 5253.215 ; gain = 0.000 ; free physical = 27449 ; free virtual = 51716
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5253.215 ; gain = 0.000 ; free physical = 27449 ; free virtual = 51716
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: c498ad26
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 5253.215 ; gain = 0.000 ; free physical = 27471 ; free virtual = 51738
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1293abf7b
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 5253.215 ; gain = 0.000 ; free physical = 27404 ; free virtual = 51671
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1293abf7b
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 5253.215 ; gain = 0.000 ; free physical = 27413 ; free virtual = 51679
+Phase 1 Placer Initialization | Checksum: 1293abf7b
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 5253.215 ; gain = 0.000 ; free physical = 27401 ; free virtual = 51668
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 18c86766e
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:16 . Memory (MB): peak = 5253.215 ; gain = 0.000 ; free physical = 27378 ; free virtual = 51645
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 18c86766e
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:17 . Memory (MB): peak = 5253.215 ; gain = 0.000 ; free physical = 27374 ; free virtual = 51641
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 18c86766e
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:19 . Memory (MB): peak = 5257.559 ; gain = 4.344 ; free physical = 27301 ; free virtual = 51568
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 14b5572e2
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:20 . Memory (MB): peak = 5289.570 ; gain = 36.355 ; free physical = 27302 ; free virtual = 51569
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 14b5572e2
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:20 . Memory (MB): peak = 5289.570 ; gain = 36.355 ; free physical = 27302 ; free virtual = 51569
+Phase 2.1.1 Partition Driven Placement | Checksum: 14b5572e2
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:20 . Memory (MB): peak = 5289.570 ; gain = 36.355 ; free physical = 27308 ; free virtual = 51575
+Phase 2.1 Floorplanning | Checksum: 1a3773ce8
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:20 . Memory (MB): peak = 5289.570 ; gain = 36.355 ; free physical = 27309 ; free virtual = 51576
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1a3773ce8
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:20 . Memory (MB): peak = 5289.570 ; gain = 36.355 ; free physical = 27309 ; free virtual = 51576
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1a3773ce8
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:20 . Memory (MB): peak = 5289.570 ; gain = 36.355 ; free physical = 27309 ; free virtual = 51576
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 559 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 224 nets or LUTs. Breaked 0 LUT, combined 224 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 5 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 5 nets.  Re-placed 32 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 5 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 32 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.18 . Memory (MB): peak = 5311.570 ; gain = 0.000 ; free physical = 27288 ; free virtual = 51555
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5311.570 ; gain = 0.000 ; free physical = 27288 ; free virtual = 51555
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            224  |                   224  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     5  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            224  |                   229  |           0  |           5  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 22b2c90c3
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:00:57 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27279 ; free virtual = 51546
+Phase 2.4 Global Placement Core | Checksum: 1f9557f03
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:03 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27285 ; free virtual = 51552
+Phase 2 Global Placement | Checksum: 1f9557f03
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:03 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27297 ; free virtual = 51564
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1d0441c91
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:07 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27288 ; free virtual = 51555
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 174b5b63c
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:01:08 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27280 ; free virtual = 51547
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 1481e24ba
+
+Time (s): cpu = 00:02:30 ; elapsed = 00:01:09 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27265 ; free virtual = 51532
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 1b81b4383
+
+Time (s): cpu = 00:02:30 ; elapsed = 00:01:09 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27263 ; free virtual = 51530
+
+Phase 3.3.3 Slice Area Swap
+Phase 3.3.3 Slice Area Swap | Checksum: 150a31c9d
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:10 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27222 ; free virtual = 51489
+Phase 3.3 Small Shape DP | Checksum: 1d5ef0b03
+
+Time (s): cpu = 00:02:38 ; elapsed = 00:01:12 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27262 ; free virtual = 51528
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1d8b57b7f
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:13 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27258 ; free virtual = 51525
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 1d4d5cef1
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:13 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27258 ; free virtual = 51525
+Phase 3 Detail Placement | Checksum: 1d4d5cef1
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:14 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27258 ; free virtual = 51525
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1e51d2017
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=9.165 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 19175e69c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.38 . Memory (MB): peak = 5311.570 ; gain = 0.000 ; free physical = 27250 ; free virtual = 51517
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1be0e9467
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.45 . Memory (MB): peak = 5311.570 ; gain = 0.000 ; free physical = 27250 ; free virtual = 51517
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1e51d2017
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:22 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27251 ; free virtual = 51518
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=9.165. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1f838c81e
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:22 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27252 ; free virtual = 51519
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:22 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27252 ; free virtual = 51519
+Phase 4.1 Post Commit Optimization | Checksum: 1f838c81e
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:22 . Memory (MB): peak = 5311.570 ; gain = 58.355 ; free physical = 27252 ; free virtual = 51519
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5380.570 ; gain = 0.000 ; free physical = 27250 ; free virtual = 51517
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2f16058f7
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:01:29 . Memory (MB): peak = 5380.570 ; gain = 127.355 ; free physical = 27260 ; free virtual = 51527
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 2f16058f7
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:01:29 . Memory (MB): peak = 5380.570 ; gain = 127.355 ; free physical = 27260 ; free virtual = 51527
+Phase 4.3 Placer Reporting | Checksum: 2f16058f7
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:01:30 . Memory (MB): peak = 5380.570 ; gain = 127.355 ; free physical = 27262 ; free virtual = 51529
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5380.570 ; gain = 0.000 ; free physical = 27262 ; free virtual = 51529
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:01:30 . Memory (MB): peak = 5380.570 ; gain = 127.355 ; free physical = 27262 ; free virtual = 51529
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2cc555324
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:01:30 . Memory (MB): peak = 5380.570 ; gain = 127.355 ; free physical = 27262 ; free virtual = 51529
+Ending Placer Task | Checksum: 1f6b326fd
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:01:30 . Memory (MB): peak = 5380.570 ; gain = 127.355 ; free physical = 27262 ; free virtual = 51529
+INFO: [Common 17-83] Releasing license: Implementation
+100 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:13 ; elapsed = 00:01:32 . Memory (MB): peak = 5380.570 ; gain = 127.355 ; free physical = 27425 ; free virtual = 51692
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 5380.570 ; gain = 0.000 ; free physical = 27365 ; free virtual = 51665
+INFO: [Common 17-1381] The checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.runs/impl_1/design_audio_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 5380.570 ; gain = 0.000 ; free physical = 27390 ; free virtual = 51668
+INFO: [runtcl-4] Executing : report_io -file design_audio_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.49 . Memory (MB): peak = 5380.570 ; gain = 0.000 ; free physical = 27376 ; free virtual = 51653
+INFO: [runtcl-4] Executing : report_utilization -file design_audio_wrapper_utilization_placed.rpt -pb design_audio_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_audio_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.32 . Memory (MB): peak = 5380.570 ; gain = 0.000 ; free physical = 27407 ; free virtual = 51685
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+109 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 5380.570 ; gain = 0.000 ; free physical = 27324 ; free virtual = 51633
+INFO: [Common 17-1381] The checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.runs/impl_1/design_audio_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 5380.570 ; gain = 0.000 ; free physical = 27353 ; free virtual = 51643
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: ef1f31eb ConstDB: 0 ShapeSum: e6c6439 RouteDB: f92790d9
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.90 ; elapsed = 00:00:00.99 . Memory (MB): peak = 5380.574 ; gain = 0.000 ; free physical = 27174 ; free virtual = 51463
+Post Restoration Checksum: NetGraph: 33f16e30 NumContArr: 959914d0 Constraints: 9416e687 Timing: 0
+Phase 1 Build RT Design | Checksum: 15da16987
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 5380.574 ; gain = 0.000 ; free physical = 27169 ; free virtual = 51458
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 15da16987
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 5380.574 ; gain = 0.000 ; free physical = 27110 ; free virtual = 51399
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 15da16987
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 5380.574 ; gain = 0.000 ; free physical = 27111 ; free virtual = 51399
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 1ae42e5f9
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 5431.734 ; gain = 51.160 ; free physical = 27092 ; free virtual = 51380
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1f90c52d8
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 5431.734 ; gain = 51.160 ; free physical = 27087 ; free virtual = 51376
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=9.207  | TNS=0.000  | WHS=-0.059 | THS=-21.646|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 28bc35cde
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:19 . Memory (MB): peak = 5431.734 ; gain = 51.160 ; free physical = 27072 ; free virtual = 51360
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=9.207  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 285169c3c
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:19 . Memory (MB): peak = 5431.734 ; gain = 51.160 ; free physical = 27071 ; free virtual = 51360
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 19366
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 16979
+  Number of Partially Routed Nets     = 2387
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 22d37a0b8
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:20 . Memory (MB): peak = 5436.887 ; gain = 56.312 ; free physical = 27071 ; free virtual = 51359
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 22d37a0b8
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:21 . Memory (MB): peak = 5436.887 ; gain = 56.312 ; free physical = 27071 ; free virtual = 51359
+Phase 3 Initial Routing | Checksum: 13a819115
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:25 . Memory (MB): peak = 5468.902 ; gain = 88.328 ; free physical = 27028 ; free virtual = 51317
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3395
+ Number of Nodes with overlaps = 215
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=9.178  | TNS=0.000  | WHS=-0.014 | THS=-0.119 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 20eb9cd3e
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:00:59 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27036 ; free virtual = 51322
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 13881625e
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:00 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27043 ; free virtual = 51330
+Phase 4 Rip-up And Reroute | Checksum: 13881625e
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:00 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27043 ; free virtual = 51330
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 12cc92dd5
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:03 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27048 ; free virtual = 51335
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=9.178  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 199f51263
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:03 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27048 ; free virtual = 51335
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 199f51263
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:03 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27048 ; free virtual = 51335
+Phase 5 Delay and Skew Optimization | Checksum: 199f51263
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:03 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27048 ; free virtual = 51335
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 193407faa
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:05 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27049 ; free virtual = 51336
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=9.178  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 205872993
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:05 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27048 ; free virtual = 51335
+Phase 6 Post Hold Fix | Checksum: 205872993
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:05 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27048 ; free virtual = 51335
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.980646 %
+  Global Horizontal Routing Utilization  = 1.10758 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 13db0b138
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:06 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27045 ; free virtual = 51333
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 13db0b138
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:06 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27044 ; free virtual = 51331
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 13db0b138
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:01:08 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27043 ; free virtual = 51330
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 13db0b138
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:01:08 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27044 ; free virtual = 51332
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=9.178  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 13db0b138
+
+Time (s): cpu = 00:02:49 ; elapsed = 00:01:08 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27045 ; free virtual = 51332
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:49 ; elapsed = 00:01:09 . Memory (MB): peak = 5532.930 ; gain = 152.355 ; free physical = 27135 ; free virtual = 51422
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+125 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:58 ; elapsed = 00:01:11 . Memory (MB): peak = 5532.930 ; gain = 152.359 ; free physical = 27136 ; free virtual = 51424
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 5532.930 ; gain = 0.000 ; free physical = 27072 ; free virtual = 51399
+INFO: [Common 17-1381] The checkpoint '/home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.runs/impl_1/design_audio_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 5532.930 ; gain = 0.000 ; free physical = 27112 ; free virtual = 51411
+INFO: [runtcl-4] Executing : report_drc -file design_audio_wrapper_drc_routed.rpt -pb design_audio_wrapper_drc_routed.pb -rpx design_audio_wrapper_drc_routed.rpx
+Command: report_drc -file design_audio_wrapper_drc_routed.rpt -pb design_audio_wrapper_drc_routed.pb -rpx design_audio_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.runs/impl_1/design_audio_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:18 ; elapsed = 00:00:05 . Memory (MB): peak = 5532.930 ; gain = 0.000 ; free physical = 27102 ; free virtual = 51402
+INFO: [runtcl-4] Executing : report_methodology -file design_audio_wrapper_methodology_drc_routed.rpt -pb design_audio_wrapper_methodology_drc_routed.pb -rpx design_audio_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_audio_wrapper_methodology_drc_routed.rpt -pb design_audio_wrapper_methodology_drc_routed.pb -rpx design_audio_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/userdata/k64D/trungpd_64d/vivado_work/test/srctest/source/zcu106/lab4_test/fir_test/FIR/FIR.runs/impl_1/design_audio_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:21 ; elapsed = 00:00:06 . Memory (MB): peak = 5532.930 ; gain = 0.000 ; free physical = 27102 ; free virtual = 51402
+INFO: [runtcl-4] Executing : report_power -file design_audio_wrapper_power_routed.rpt -pb design_audio_wrapper_power_summary_routed.pb -rpx design_audio_wrapper_power_routed.rpx
+Command: report_power -file design_audio_wrapper_power_routed.rpt -pb design_audio_wrapper_power_summary_routed.pb -rpx design_audio_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+137 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 5532.930 ; gain = 0.000 ; free physical = 27035 ; free virtual = 51347
+INFO: [runtcl-4] Executing : report_route_status -file design_audio_wrapper_route_status.rpt -pb design_audio_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file design_audio_wrapper_timing_summary_routed.rpt -pb design_audio_wrapper_timing_summary_routed.pb -rpx design_audio_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_audio_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_audio_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_audio_wrapper_bus_skew_routed.rpt -pb design_audio_wrapper_bus_skew_routed.pb -rpx design_audio_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Memdata 28-208] The XPM instance: <design_audio_i/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <design_audio_i/i2s_transmitter_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_audio_i/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <design_audio_i/i2s_receiver_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/INTERLEAVED.second_level_xpm_fifo_buffer/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/INTERLEAVED.second_level_xpm_fifo_buffer/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[1].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[1].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[0].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[0].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_audio_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/buffering_1/INTERLEAVED.interleaved_xpm_fifo_buffer/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_audio_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/buffering_1/INTERLEAVED.interleaved_xpm_fifo_buffer/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+Command: write_bitstream -force design_audio_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_audio_i/fir_0/inst/grp_fir_Pipeline_loop_fu_76/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg input design_audio_i/fir_0/inst/grp_fir_Pipeline_loop_fu_76/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_audio_i/fir_1/inst/grp_fir_Pipeline_loop_fu_76/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg input design_audio_i/fir_1/inst/grp_fir_Pipeline_loop_fu_76/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC RTSTAT-10] No routable loads: 2 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_audio_i/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/I_DATAMOVER_S2MM/n_0_0, and design_audio_i/audio_formatter_0/inst/MM2S_INCLUDED.mm2s_top_1/mm2s_logic_1/I_DATAMOVER_MM2S/n_0_0.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 3 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_audio_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+32 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 5660.855 ; gain = 127.926 ; free physical = 26955 ; free virtual = 51287
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 18 10:49:57 2023...
